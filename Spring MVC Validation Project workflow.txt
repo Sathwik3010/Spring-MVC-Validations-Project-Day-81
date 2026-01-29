@@ -1,0 +1,6 @@
+1) in HomeController page create a ModelAndView named register where it should go to register.jsp
+2) in register.jsp create a form In that form give action as registeruser.
+3) create a controller named RegisterController in that give mapping @RequestMapping(value="/registeruser") as which we have given in registr.jsp.
+4) create a package named model in that model create a class called User add the allargsconstructor, no argsconstructor, getters and setter method.
+5) now for that create a validation in User page for that add the dependencies in pom.xml the dependencies are hibernate-validator which we will get in maven repository
+6) now in register controller redirect to error page and user page which are jsp files based on the input given by the user if wrong validation it goes to errorpage.jsp , If correct goes to user.jsp.
